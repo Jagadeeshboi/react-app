@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+img
+{
+  border-radius: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container
+{
+  margin-top: 30px;
+  background-color: yellow;
+  width: 100%;
+  border-radius: 15px;
+}
+@media only screen  and (max-width:1024px)  {
+  .container
+  {
+    margin-top: 30px;
+    background-color: yellow;
+    width: 80%;
+    border-radius: 15px;
+  }
+  img
+  {
+    visibility:visible;
+    border: 20px; ;
+  }
+  }
+  
