@@ -1,0 +1,51 @@
+.video
+{
+  display: flex;
+  justify-content:space-around;
+}
+.para1,.para-gra{
+    text-align: left;
+    text-transform: capitalize;
+    color: #eee;
+    width: 70%;
+    margin: auto;
+    position: relative;
+  }
+  .order-btn
+{
+  padding: 5px;
+  width: 150px;
+  margin: 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+}
+.order-btn:hover
+{
+  position:sticky;
+  padding: 5px;
+  width: 150px;
+  margin: 30px;
+  background-color: rgb(221, 220, 217);
+  border: none;
+  border-radius: 5px;
+  color: orange;
+}
+@media only  screen  and (max-width:731px){
+  .para1 h1
+  {
+    visibility: visible;
+    color: #eee;
+    overflow: hidden;
+  }
+
+  .video .image1
+  {
+    visibility: hidden;
+    width: 20px;
+    height: 30px;
+  }
+}
+

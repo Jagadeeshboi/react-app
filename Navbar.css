@@ -1,0 +1,152 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: '';
+}
+
+body
+{
+  background-color:black;
+}
+img
+{
+  margin-right: 20px;
+}
+:root 
+{
+  --mainColor:black;
+  --maincolorlight:#5757aa;
+  --secondarycolor:#DB2839;
+  --textcolor:#eee;
+}
+h2
+{
+  visibility: hidden;
+}
+.same
+{
+  visibility: hidden;
+}
+.next
+{
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: space-between;
+  color: var(--textcolor);
+  visibility: hidden;
+}
+nav
+{
+  margin-top: 1px;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content:space-between;
+}
+h1
+{
+  color: orange;
+  padding: 10px;
+}
+nav 
+{
+  padding: 8px;
+  color:var(--textcolor);
+}
+nav a
+{
+  margin-top: 20px;
+  margin: 0 2rem;
+  color:var(--textcolor);
+  text-decoration: none;
+}
+nav a:hover
+{
+  color:var(--secondarycolor);
+}
+header .nav-btn
+{
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:var(--textcolor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width:1024px)
+{ 
+  .next h2
+  {
+    color:orange;
+  }
+  
+  nav a
+  {
+    background-color: var(--textcolor);
+    color: #29335C;
+  }
+  .para1
+  {
+    text-align: justify;
+  }
+  header .nav-btn 
+  {
+    visibility: visible;
+    opacity: 1;
+  }
+  h1
+  {
+    visibility: hidden;
+  }
+  .same
+  {
+    text-align:center;
+    margin-left: 30px;
+  }
+   nav 
+  {
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap: 1.5rem;
+    background-color: var(--textcolor);
+    transition:0.5s;
+    transform: translateY(-100vh);
+  }
+  header .responsive_nav
+  {
+    transform:none;
+  }
+
+  nav .nav-close-btn
+  {
+    position: absolute;
+    top:2px;
+    right: 2px;
+    color:var(--mainColor);
+  }
+  nav a
+  {
+    font-size: 1.5rem;
+  }
+  .next,h2
+  {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    color: var(--textcolor);
+    visibility:visible;
+    padding: 5px;
+  }
+  
+}
